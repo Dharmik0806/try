@@ -1,0 +1,596 @@
+#include<iostream>
+using namespace std;
+//_____________________________________________________________________________________________________________________________
+int pin[4];
+int ph_no[10];
+int amount=500000;
+
+
+//________________________________________________________________________________________________________________________________________
+
+void Exit() {
+	cout << "\n\t\t\t\t\t\t   _______________________________";                                                                       
+	cout << "\n\t\t\t\t\t\t   *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*";                                                                       
+	
+	cout << "\n\n\t\t\t\t\t\t         UNION BANK OF INDIA";
+	cout << "\n\t\t\t\t\t\t   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  ";                                                                       
+	cout << "\n\n\t\t\t\t\t\t        VARACHA BRANCH-SURAT";
+	cout << "\n\t\t\t\t\t\t           PIN_CODE-360001";
+	cout << "\n\n\t\t\t\t\t\t          -: THANK YOU :-";
+	
+	cout << "\n\t\t\t\t\t\t   _______________________________";                                                                       
+	cout << "\n\t\t\t\t\t\t   *_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*_*";                                                                       
+	
+	
+}
+
+class greanPinG{
+	protected:
+		int vpin[4];
+			
+	public:
+		void setPin() {
+		cout << "\n\t\t\t\t\tPlease Enter Your 10 Digit Mo-No...>>> ";	
+		cin >> ph_no[10];
+
+		cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+		cin >> pin[4];
+		
+		cout << "\n\t\t\t\t\t\tVERIFY THE PIN  >>>";
+		cin >> vpin[4];
+		
+			if(pin[4] == vpin[4]) {
+				cout << "\n\t\t\t\t\t\tCONGRATULATION !!!!!";
+				cout << "\n\t\t\t\t\t\tYour Grean PIN Genrated Successfull";
+			
+			}					
+			
+		}		
+};
+//________________________________________________________________________________________________________________________________________
+
+class fundtransfer:public greanPinG {   
+    public:
+		int pin_number[4]; 
+		int count1,count2,count3,count4,amount5,count6,count7,count8;
+		int ac_no[16],ac_no1[16];             
+
+	public:
+		void setFundtransfer() {//_____________________________________________________________sssssssssssssssssssssssssss
+			secound:                                                                      //
+			
+			cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+			cin >> pin_number[4];
+			
+			if( pin_number[4] == pin[4] ) {
+				third:  //______________________________________________________________________________third    ttttttttttttttttttttttttttt
+				
+				cout << "\n\n\t\t\t\t\t\t     1] Account Based Fund Transfer";
+				cout << "\n\n\t\t\t\t\t\t     2] FUND TRNSFER";	
+				cout << "\n\n\t\t\t\t\t\t     3] Card To Card Fund Transfer";
+				cout << "\n\n\t\t\t\t\t\t     4] Corporate To Card Fund Transfer";	
+				cout << "\n\n\t\t\t\t\t\t     5] Exit";	
+				cout << "\n\n\t\t\t\t\t\t      >>>";
+				cin >> count1;
+				
+				if(count1 == 1) {                                                   
+					cout << "\n\n\t\t\t\t\t\t     1] SAVING ACCOUNT";
+					cout << "\n\n\t\t\t\t\t\t     2] CURRENT ACCOUNT";
+					cout << "\n\n\t\t\t\t\t\t     3] CC DEPOSIT ACCOUNT";
+					cout << "\n\n\t\t\t\t\t\t     4] LOAN ACCOUNT";
+		     		cout << "\n\n\t\t\t\t\t\t      >>>";
+					cin >> count2;	
+					
+					if(count2 == 1 || count2 == 2 || count2 == 3 || count2 == 4) {
+						fifth:
+						fourth:	
+						cout << "\n\t\t\t\t\tPlease Enter Your To Receiver Account Number : ";	
+						cin >> ac_no[16];
+						
+						cout << "\n\n\t\t\t\t\t\t     1] CORRECT";
+						cout << "\n\n\t\t\t\t\t\t     2] IN CORRECT";
+	     				cout << "\n\n\t\t\t\t\t\t      >>>";
+						cin >> count3;	
+						
+						if(count3 == 1) {
+							                                                                      //-----------------------------fifth fffffffffffffffff
+							seven:	
+	     					cout << "\n\t\t\t\t\tPlease VERIFY To Receiver Account Number : ";	
+							cin >> ac_no1[16];	
+							
+							if(ac_no[16] == ac_no1[16] ) {
+								cout << "\n\n\t\t\t\t\t\t     1] CORRECT";
+								cout << "\n\n\t\t\t\t\t\t     2] IN CORRECT";
+			     				cout << "\n\n\t\t\t\t\t\t      >>>";
+								cin >> count4;
+								
+								if(count4 == 1) {
+									first:                                                                  // _______________________________________________first                   -----------ffffff
+									cout << "\n\n\t\t\t\t\t\t     PLEASE ENTER AMOUNT : ";
+									cin >> amount5;
+									
+									if(amount5 >= 20000 &&amount5 <= 100000) {
+									
+									
+									cout << "\n\n\t\t\t\t\t\t     1] CONFIRM";
+									cout << "\n\n\t\t\t\t\t\t     2] CANCEL";
+				     				cout << "\n\n\t\t\t\t\t\t      >>>";
+									cin >> count6; 
+									
+									if(count6 == 1) {
+	     								cout << "\n\t\t\t\t\tYour Transaction Is Being Processed,: ";	
+	     								cout << "\n\t\t\t\t\tPlease Wait: ";
+	     								
+	     								cout << "\n\n\t\t\t\t\t DO YOU SHOW YOUR BALENCE :";
+								    	cout << "\n\n\t\t\t\t\t\t     1] YES";
+								    	cout << "\n\n\t\t\t\t\t\t     2] NO";	     								
+	     								cout << "\n\n\t\t\t\t\t\t      >>>";
+										cin >> count7; 
+										
+										if(count7 == 1) {
+											cout << "\n\t\t\t\t\t_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _";
+											cout << "\n\t\t\t\t\t|                                                |";
+											cout << "\n\t\t\t\t\t|     Date : 12,August-2022                      |";
+											cout << "\n\t\t\t\t\t|     Day  : Friday                              |";
+											cout << "\n\t\t\t\t\t|                                                |";
+											cout << "\n\t\t\t\t\t|     ACCOUNT BALENCE IS :" << amount-amount5 << "\t\t |" ;
+											cout << "\n\t\t\t\t\t|_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ |";
+											Exit();
+											
+										}else{
+                     					    cout << "\n\n\t\t\t\t\t\t       -: Transaction Successfull :-";
+											Exit();
+											
+										}
+									}else{
+                     					cout << "\n\n\t\t\t\t\t\t        -: Please Try Again :-\n";
+                     					goto first;
+										
+									}									
+								}else{
+                     				cout << "\n\n\t\t\t       -: Arror :-";
+                     				cout << "\n\n\t\t\t      -: Please Enter Amount Is Not Less Than 20000 And Not Greater Than 100000 :-";
+                     				cout << "\n\n\t\t\t       -: Usage Limit Exceeds :-\n";
+											
+									goto first;									
+								}									
+							}else if(count4 == 2) {
+								cout << "\n\n\t\t\t\t\t\t        -: PLEASE ENTER TRY AGAIN :-\n";
+								goto seven;
+							}
+						}else{
+                     	 	cout << "\n\n\t\t\t\t\t\t        -: Arror :-";
+							cout << "\n\n\t\t\t\t\t\t        -: PLEASE ENTER SAME Receiver ACCOUNT NUMBER :-\n";	
+                     	 	cout << "\n\n\t\t\t\t\t\t        -: Please Try Again :-";
+                     	 	
+                     	 	goto fifth;
+													
+						}
+						}else if(count3 == 2) {
+                     	cout << "\n\n\t\t\t\t\t\t        -: Please Try Again :-\n";
+						goto fourth;
+						}					
+					}else{
+						cout << "\n\t\t\t\t\t\t     Wrounge Choice :";
+						cout << "\n\n\t\t\t\t\t\t       THANK YOU :";
+						
+					}				
+				}else if(count1 == 2 || count1 == 3 || count1 == 4) {                     
+				cout << "\n\n\t\t\t\t\t        -: This Service Is Currently Not Available  :-";
+				cout << "\n\t\t\t\t\t        -: Please Visite The Main Brance :-";
+				
+				cout << "\n\t\t\t\t\t          Goto Main Manue Press 1 : >>> ";
+				cin >> count8;
+					
+					if(count8 == 1) {
+						goto third;
+					}
+				
+				}else if(count1 == 5) {
+					Exit();
+					
+				}
+				
+			}else{
+				cout << "\n\n\t\t\t\t\t\t        -: Incorrect PIN :-";
+				cout << "\n\t\t\t\t\t\t        -: Please Try Again :-";
+				goto secound;
+			}			
+		}
+	};
+//_________________________________PIN CHANGE___________________________________________________________
+
+
+class pinChange:public fundtransfer{
+	public:
+		int newpin[4],reEnewpin[4],Nmo_no[10],otp[4];
+	
+	public:
+		void setnewpin() {
+			cout << "\n\t\t\t\t\tPlease Enter Your 10 Digit Mo-No...>>> ";	
+			cin >> Nmo_no[10];
+			
+			if( Nmo_no[10] == ph_no[10]) {
+			cout << "\n\n\t\t\tPLEASE WAIT WHILE YOUR TRANSACTION ";
+			cout << "\n\t\t\t\t\tIS BEING PROCESSED \n";
+			
+			cout << "\n\t\t\t\t\t  OTP GENERATED SUCCESSFULLY";
+			
+			cout << "\n\n\t\t\tPLEASE ENTER YOUR OTP ";
+			cout << "\n\t\t\t\t\t FOR VALIDATION ";
+			cout << "\n\t\t\t\t\t  >>> ";
+			cin >> otp[4];
+
+			cout << "\n\n\t\t\tPLEASE WAIT WHILE YOUR TRANSACTION ";
+			cout << "\n\t\t\t\t\tIS BEING PROCESSED \n";
+			
+			cout << "\n\n\t\t\tPLEASE ENTER YOUR NEW PIN ";
+			cout << "\n\t\tTO VOID TRANSACTION PRESS CANSEL";
+			cout << "\n\n\t\t\t\t\t  >>> ";
+			cin >> newpin[4];
+			
+			repit:
+				
+			cout << "\n\n\t\t\tPLEASE RE-ENTER YOUR NEW PIN ";
+			cout << "\n\t\tTO VOID TRANSACTION PRESS CANSEL";
+			cout << "\n\n\t\t\t\t\t  >>> ";
+			cin >> reEnewpin[4];
+				
+				if(reEnewpin[4] == newpin[4]) {
+					cout << "\n\t\t\t\t\t          PIN CHANGE COMPLETE ! ";
+					cout << "\n\t\t\t\t\t       PLEASE TAKE YOUR CARD AND RECIPT ";
+					pin[4]=newpin[4];
+					
+					
+				}else{
+					cout << "\n\t\t\t\t\t          INCORRECT PIN ENTER  ";
+					cout << "\n\n\t\t\t\t\t           PLEASE TRY AGAIN ";
+					
+				}
+		}
+	}
+};
+
+//--------------------------------------------------------------------------------------------
+
+//__________________________________FAST CASH__________________________________________________________________
+class fastCash{
+	public:
+		int money,main_bill;
+	public:
+		void setFastcash() {
+			cout << "\n\t\t\t\t\t\tPlease Enter Amount : ";
+			cin >> money;
+			
+			main_bill=amount-money;
+			cout << "\n\t\t\t\t\t\tCONGRATULATION !!!!!";
+			cout << "\n\t\t\t\t\t\tYour Transection Successfull";
+			cout << "\n\n\t\t\t\t\t\tYour Account Balence Is : " << main_bill ;
+		}
+};
+//_ _ _  _ _  __ _ __ _ _ __ _ __________________________________________________________________
+
+//______________________________________________________________________________________
+
+class withdrawal{
+	public:
+		int type,amt,ans;
+		
+	public:
+		void setwithdrawal() {
+			cout << "\n\t\t\t\t\t\tPlease Select Account Type : ";
+			cout << "\n\n\t\t\t\t\t\t\t 1 ]  KCC";
+			cout << "\n\t\t\t\t\t\t\t   2 ] CURRENY ";
+			cout << "\n\t\t\t\t\t\t\t   3 ] SAVINGS ";
+			cout << "\n\n\t\t\t\t\t  >>> ";
+			cin >> type;
+				 
+				if(type == 1 || type == 2 ) {
+					nine:
+						
+					cout << "\n\t\t\t\t\t\tPlease Enter Amount : ";
+					cin >> amt;	
+					
+					cout << "\n\n\t\t\t\t\t\t     1] YES";
+				 	cout << "\n\n\t\t\t\t\t\t     2] NO";	
+				     								
+     								
+	    			cout << "\n\n\t\t\t\t\t\t      >>>";
+					cin >> ans; 
+					
+					if(ans == 1) {
+						cout << "\n\t\t\t\t\tYour Transaction Is Being Processed,: ";	
+	     				cout << "\n\t\t\t\t\tPlease Wait: ";
+						cout << "\n\n\t\t\t\t\t\t       -: Withdrawal Money Successfull :-";		
+					
+					}else{
+						cout << "\n\n\t\t\t\t\t\t     PLEASE TRY AGAIN";
+						goto nine;	     								
+
+					}
+	     											
+				}
+			
+			
+		}	
+};
+
+//_________________________class  BALANCE INQUAIRY_____________________________________________________________
+
+class balanceInquairy{
+	public:
+		void checkbalance() {
+			cout << "\n\t\t\t\t\t\tYOUR MAIN ACCOUNT BALANCE IS : "  << amount;
+		}
+};
+
+//______________class  MINI STATEMENT";____________________
+
+class miniStatement:public withdrawal{
+	public:
+		void setstatement() {
+			cout << "\n\t\t\t\t\t AMOUNT IS : " << amount;
+			cout << "\n\t\t\t\t\t WIRHDWAWAL IS : " << amt;
+			
+			cout << "\n\t\t\t\t\t MAIN BALANCE IS : " << amount-amt;
+
+
+		}
+};
+
+//____________________________________________________________________________________
+
+int main() {
+	char no1;
+	int no2,no3;
+	
+//_______object_______________
+	greanPinG g;
+	fundtransfer f;	
+	pinChange p;
+	fastCash F1;
+	withdrawal w;
+	balanceInquairy b;
+	miniStatement m;
+	
+	cout << "  \t\t\t\t\t__________________________________________________";                                                                   //1 step
+	cout << "\n\t\t\t\t\t|                                                |";
+	cout << "\n\t\t\t\t\t|         -: BANK MANAGMENT SYSTEM :-            |";
+	cout << "\n\t\t\t\t\t|________________________________________________|";
+	cout << "\n\n\t\t\t\t\t        -: Desiged And Programed By :-"          ;
+	cout << "\n\t\t\t\t\t_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"   ;
+	cout << "\n\n\n\t\t\t\t\t            -: DHARMIK D. LAKANI :-"           ;
+	cout << "\n\n\t\t\t\t\t                 -: Trainer :-"                  ;
+	cout << "\n\t\t\t\t\t_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n" ;
+	cout << "\n\t\t\t\t\t          -: ANKIT SIR DHARRSANDIYA :-"            ;
+	cout << "\n\n\t\t\t\t\t          Please Enter N Key To Continue....\n"  ;                                                                     //2 step
+	cout << "\n\n\t\t\t\t\t\t\t    >>>";
+	cin >> no1;
+	
+	if(no1 == 78 || no1 == 110) {
+		cout << "\n\n\t\t\t\t\t______________UNION BANK OF INDIA_____________\n";
+		
+		cout << "\n\t\t\t\t\t-----: WEL-COME TO UNION BANK OF INDIA ATM:-----";
+		cout << "\n\t\t\t\t\t________________________________________________";
+		cout << "\n\n\t\t\t\t\t         *** PLEASE ENSERT YOUR CARD ***\n";
+		
+		cout << "\n\t\t\t\t\tHi, Please Do not Remove Your Chip Card.";           //***************
+		cout << "\n\t\t\t\t\t     Leave your card Inserted During";
+		cout << "\n\t\t\t\t\t        the Entrire Transaction\n";
+		
+		cout << "\n\n\t\t\t\t\t__________PLEASE SELECT YOUR LANGUAGE____________\n";
+		
+		lable1:
+		cout << "\n\t\t\t\t\t                  1] ENGLISH";                                                                        //4 step
+		cout << "\n\t\t\t\t\t                  2] HINDI";
+		cout << "\n\t\t\t\t\t                  3] SET GREAN PIN ";
+		cout << "\n\t\t\t\t\t                  4] EXIT";                                                                        //4 step
+		cout << "\n\n\t\t\t\t\t                  >>>";
+		cin >> no2 ;
+
+			if(no2 == 1) {    
+            
+			lable2:    
+				                                                                                      
+			cout << "\n\t\t\t\t\t             OUR SERVICESES";
+			cout << "\n\t\t\t\t\t       ______________________________";
+			cout << "\n\t\t\t\t\t       Please Select Your Transaction";
+			cout << "\n\t\t\t\t\t       ______________________________";
+			
+			
+			cout << "\n\n\t\t\t\t\t\t     1] FUND TRNSFER";
+			cout << "\n\n\t\t\t\t\t\t     2] PIN CHANGE";
+			cout << "\n\n\t\t\t\t\t\t     3] FAST CASH";
+			cout << "\n\n\t\t\t\t\t\t     4] WITHDRAWAL";
+			cout << "\n\n\t\t\t\t\t\t     5] BALANCE INQUAIRY";
+			cout << "\n\n\t\t\t\t\t\t     6] MINI STATEMENT";
+			cout << "\n\n\t\t\t\t\t\t     7] OTHER";
+			cout << "\n\n\t\t\t\t\t\t     8] EXIT";
+			cout << "\n\n\t\t\t\t\t\t      >>>";
+			cin >> no3; 		
+				
+				switch(no3) {
+					case 1 :
+						int no;
+						int pin13[4];
+						
+						eight:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no;
+						
+						if(no >= 10 && no < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin13[4];
+							
+							if( pin13[4] == pin[4] ) {
+								f.setFundtransfer();
+								amount=amount-f.amount5	;
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto eight;
+						}
+						Exit();	
+						break;
+						
+					case 2 :
+						int no11;
+						int pin11[4];
+						
+						abc:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no11;
+						
+						if(no11 >= 10 && no11 < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin11[4];
+							
+							if( pin11[4] == pin[4] ) {
+								p.setnewpin();
+								amount=amount-f.amount5	;
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto abc;
+						}
+						Exit();							
+						break;
+						
+					case 3 :
+						
+						
+						int no18;
+						int pin18[4];
+						
+						abcd:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no18;
+						
+						if(no18 >= 10 && no18 < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin18[4];
+							
+							if( pin18[4] == pin[4] ) {
+								F1.setFastcash();
+								amount=amount - F1.money;
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto abcd;
+						}
+						Exit();										
+						
+						break;
+					case 4 :
+						int no5;
+						int pin5[4];
+						
+						eight8:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no5;
+						
+						if(no5 >= 10 && no5 < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin5[4];
+							
+							if( pin5[4] == pin[4] ) {
+								w.setwithdrawal();
+								amount=amount - w.amt;
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto eight8;
+						}
+						Exit();		
+						break;
+						
+					case 5 :
+						int no3;
+						int pin15[4];
+						
+						elevan:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no3;						
+						if(no3 >= 10 && no3 < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin15[4];
+							
+							if( pin15[4] == pin[4] ) {
+							b.checkbalance();
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto elevan;
+						}						
+						break;
+						Exit();	
+						
+					case 6 :
+						int no1;
+						int pin14[4];
+						
+						ten:
+						cout << "\n\t\t\t\t\tEnter Any Number Between 10 And 99.";          
+						cout << "\n\t\t\t\t\t\t  For Ex.25 ";
+						cout << "\n\n\t\t\t\t\t\t\t    >>>";
+						cin >> no1;
+						
+						if(no1 >= 10 && no1 < 100) {
+							cout << "\n\n\t\t\t\t\t\tENTER 4-DIGIT PIN  >>>";
+							cin >> pin14[4];
+							
+							if( pin13[4] == pin[4] ) {
+								m.setstatement();
+							}				
+						}else{
+							cout << "\n\t\t\t\t\t WRONGE ENTER :";
+							goto ten;
+						}						
+					
+						Exit();	
+						break;
+						
+					case 7 :
+						cout << "\n\t\t\t\t\t NO OTHER SERVICE IS AVAILABLE ATE :";
+						Exit();	
+						break;
+						
+					case 8 :
+						Exit();
+						break;
+						
+					default:{
+						Exit();			
+						break;
+					}	
+				}
+				
+		}else if(no2 == 2) {
+			cout << "\n\t\t\t\t\t               !!!  Sorry  !!!";
+			cout << "\n\t\t\t\t\t      HIND Language Is Not Corrunt Available\n\n";
+			goto lable1;
+																						
+		}else if(no2 == 3) {
+			f.setPin();
+			goto lable2;
+		
+		
+		}else if(no2 == 4) {
+			Exit();
+		}
+	}else{
+		Exit();
+	}
+	
+	return 0;
+} //4:58
